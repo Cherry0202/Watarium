@@ -1,35 +1,19 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <!--      <h1 class="title">-->
-      <!--        watarium-->
-      <!--      </h1>-->
-      <!--      <h2 class="subtitle">-->
-      <!--        My impressive Nuxt.js project-->
-      <!--      </h2>-->
-      <!--      <div class="links">-->
-      <!--        <a href="https://nuxtjs.org/" target="_blank" class="button&#45;&#45;green">-->
-      <!--          Documentation-->
-      <!--        </a>-->
-      <!--        <a-->
-      <!--          href="https://github.com/nuxt/nuxt.js"-->
-      <!--          target="_blank"-->
-      <!--          class="button&#45;&#45;grey"-->
-      <!--        >-->
-      <!--          GitHub-->
-      <!--        </a>-->
-      <!--      </div>-->
+    <div class="wrapper">
+      <Top />
+      <Nav />
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import Top from '~/components/Top.vue'
+import Nav from '~/components/Nav.vue'
 export default {
   components: {
-    Logo
+    Top,
+    Nav
   }
 }
 </script>
@@ -42,6 +26,12 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.wrapper {
+  background-color: antiquewhite;
+  width: 1920px;
+  height: 6054px;
 }
 
 .title {
