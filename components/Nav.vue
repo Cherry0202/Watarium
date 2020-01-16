@@ -6,7 +6,6 @@
       <li><a href="#">List2</a></li>
       <li><a href="#">List3</a></li>
       <li><a href="#">List4</a></li>
-      <li><a href="#">List5</a></li>
     </ul>
   </nav>
 </template>
@@ -25,7 +24,7 @@ export default {
 }
 
 nav {
-  max-width: 1280px;
+  max-width: 85vw;
   margin: auto;
   padding: 0;
 
@@ -43,11 +42,14 @@ nav {
       line-height: 1;
       color: #fff;
       background: #007bbb;
+      height: 110px;
+      /*width: 417px;*/
     }
 
     li:first-child {
       margin-right: auto;
       background: #f8b500;
+      width: 417px;
     }
 
     li a {

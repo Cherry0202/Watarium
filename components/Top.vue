@@ -1,10 +1,13 @@
 <template>
-  <div class="top-wrapper"></div>
+  <div class="top-wrapper">
+    <Nav />
+  </div>
 </template>
 
 <script>
+import Nav from './Nav'
 export default {
-  name: 'Top'
+  components: { Nav }
 }
 </script>
 
