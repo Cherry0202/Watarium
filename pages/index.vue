@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     <div class="wrapper">
+      <!--      <Nav />-->
       <Top />
-      <Nav />
     </div>
   </div>
 </template>
 
 <script>
 import Top from '~/components/Top.vue'
-import Nav from '~/components/Nav.vue'
+// import Nav from '~/components/Nav.vue'
 export default {
   components: {
-    Top,
-    Nav
+    Top
+    // Nav
   }
 }
 </script>
