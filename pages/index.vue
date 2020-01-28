@@ -69,24 +69,25 @@ export default {
           .first {
             width: 100%;
             height: 50%;
-            display: flex;
-            align-items: center;
+            text-align: left;
+            /*display: flex;*/
+            /*align-items: center;*/
             background-color: lightgray;
             h2 {
-              font-size: 77px;
+              font-size: 83px;
             }
           }
           .second {
             width: 100%;
             height: 50%;
-            top: 50%;
+            /*top: 50%;*/
             text-align: right;
             /*vertical-align: middle;*/
             /*line-height: 50%;*/
             /*padding-top: 8%;*/
             background-color: lightyellow;
             h2 {
-              font-size: 77px;
+              font-size: 83px;
             }
           }
         }
