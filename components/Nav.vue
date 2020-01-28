@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <ul>
-      <li class="logo"><a href="#">LOGO</a></li>
+      <li class="logo"><a href="#"></a></li>
       <li class="menu"><a href="#">ワタリウム美術館について</a></li>
       <li class="menu"><a href="#">展覧会一覧</a></li>
       <li class="menu"><a href="#">レクチャー・ワークショップ一覧</a></li>
@@ -27,7 +27,7 @@ nav {
   width: 100vw;
   margin: auto;
   padding: 0;
-  background-color: lightskyblue;
+  /*background-color: lightskyblue;*/
 
   ul {
     margin: 0;
@@ -42,22 +42,24 @@ nav {
       padding: 0;
       border-radius: 5px;
       line-height: 1;
-      color: #fff;
+      color: #000;
       font-size: 20px;
-      background: #007bbb;
+      /*background: #007bbb;*/
+      /*background-image: url('~assets/images/watarium_logo.png');*/
+      /*background-size: cover;*/
       height: 110px;
       /*width: 417px;*/
     }
 
     li.menu {
       width: 239px;
-      margin: 0px;
+      margin: 0;
       padding: 0;
       border-radius: 5px;
       line-height: 1;
-      color: #fff;
+      color: #000;
       font-size: 15px;
-      background: #007bbb;
+      /*background: #007bbb;*/
       height: 110px;
       display: flex;
       justify-content: center;
@@ -67,7 +69,9 @@ nav {
 
     li:first-child {
       margin-right: auto;
-      background: #f8b500;
+      background-image: url('~assets/images/watarium_logoのコピー.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
       width: 417px;
     }
 
@@ -75,7 +79,7 @@ nav {
       display: block;
       margin: 0;
       padding: 0;
-      color: #fff;
+      color: #000;
       text-decoration: none;
     }
   }

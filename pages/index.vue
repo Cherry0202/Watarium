@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <!--      <Top />-->
       <div class="top-wrapper">
         <main class="main-wrapper">
           <div class="main-image">
@@ -15,16 +14,18 @@
           </div>
         </main>
       </div>
+      <div class="about-wrapper"></div>
+      <div class="exhibition-wrapper"></div>
+      <div class="lecture-wrapper"></div>
+      <div class="membership-wrapper"></div>
     </div>
   </div>
 </template>
 
 <script>
-// import Top from '~/layouts/Top.vue'
 import Nav from '~/components/Nav.vue'
 export default {
   components: {
-    // Top,
     Nav
   }
 }
@@ -40,29 +41,37 @@ export default {
   text-align: center;
 
   .wrapper {
-    background-color: antiquewhite;
-    width: 1920px;
-    height: 6054px;
+    /*background-color: antiquewhite;*/
+    width: 100vw;
+    height: 500vh;
 
     .top-wrapper {
       width: 100vw;
       height: 100vh;
-      background-color: orange;
+      /*background-color: orange;*/
 
       .main-wrapper {
         width: 100vw;
         height: 95%;
-        background-color: lightblue;
+        /*background-color: lightblue;*/
 
         .main-image {
           height: 100%;
           width: 90vw;
-          background-color: lightpink;
+          background-size: cover;
         }
+
+        .main-image {
+        }
+
+        .main-image {
+          background-image: url('~assets/images/saboten.jpg');
+        }
+
         .catch-copy {
           width: 40%;
           height: 35%;
-          background-color: white;
+          /*background-color: white;*/
           position: relative;
           top: -60%;
           right: -56%;
@@ -72,7 +81,7 @@ export default {
             text-align: left;
             /*display: flex;*/
             /*align-items: center;*/
-            background-color: lightgray;
+            /*background-color: lightgray;*/
             h2 {
               font-size: 83px;
             }
@@ -85,13 +94,33 @@ export default {
             /*vertical-align: middle;*/
             /*line-height: 50%;*/
             /*padding-top: 8%;*/
-            background-color: lightyellow;
+            /*background-color: lightyellow;*/
             h2 {
               font-size: 83px;
             }
           }
         }
       }
+    }
+    .about-wrapper {
+      width: 100vw;
+      height: 100vh;
+      background-color: orange;
+    }
+    .exhibition-wrapper {
+      width: 100vw;
+      height: 100vh;
+      background-color: orangered;
+    }
+    .lecture-wrapper {
+      width: 100vw;
+      height: 100vh;
+      background-color: yellowgreen;
+    }
+    .membership-wrapper {
+      width: 100vw;
+      height: 100vh;
+      background-color: lightskyblue;
     }
   }
 }
