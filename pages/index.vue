@@ -89,7 +89,7 @@
             </div>
             <div class="membership-join-wrapper">
               <div class="membership-join-content">
-                <a href="#">申し込みはこちら</a>
+                <h1><a href="#">申し込みはこちら</a></h1>
               </div>
             </div>
           </div>
@@ -475,6 +475,14 @@ export default {
               width: 60%;
               background-color: lightpink;
               margin: 0 auto;
+              h1 {
+                font-size: 50px;
+                a {
+                  text-decoration: none;
+                  color: #707070;
+                  border-bottom: solid #707070;
+                }
+              }
             }
           }
         }
