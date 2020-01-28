@@ -1,11 +1,11 @@
 <template>
   <nav class="nav">
     <ul>
-      <li><a href="#">LOGO</a></li>
-      <li><a href="#">List1</a></li>
-      <li><a href="#">List2</a></li>
-      <li><a href="#">List3</a></li>
-      <li><a href="#">List4</a></li>
+      <li class="logo"><a href="#">LOGO</a></li>
+      <li class="menu"><a href="#">ワタリウム美術館について</a></li>
+      <li class="menu"><a href="#">展覧会一覧</a></li>
+      <li class="menu"><a href="#">レクチャー・ワークショップ一覧</a></li>
+      <li class="menu"><a href="#">ワタリウムメンバーシップ</a></li>
     </ul>
   </nav>
 </template>
@@ -24,9 +24,10 @@ export default {
 }
 
 nav {
-  max-width: 85vw;
+  width: 100vw;
   margin: auto;
   padding: 0;
+  background-color: lightskyblue;
 
   ul {
     margin: 0;
@@ -35,14 +36,32 @@ nav {
     display: flex;
     list-style: none;
 
-    li {
-      margin: 15px;
+    li.logo {
+      width: 300px;
+      margin: 0px;
       padding: 0;
       border-radius: 5px;
       line-height: 1;
       color: #fff;
+      font-size: 20px;
       background: #007bbb;
       height: 110px;
+      /*width: 417px;*/
+    }
+
+    li.menu {
+      width: 239px;
+      margin: 0px;
+      padding: 0;
+      border-radius: 5px;
+      line-height: 1;
+      color: #fff;
+      font-size: 15px;
+      background: #007bbb;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       /*width: 417px;*/
     }
 
@@ -55,7 +74,7 @@ nav {
     li a {
       display: block;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       color: #fff;
       text-decoration: none;
     }

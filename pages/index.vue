@@ -1,23 +1,36 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <Top />
+      <!--      <Top />-->
+      <div class="top-wrapper">
+        <main class="main-wrapper">
+          <div class="main-image">
+            <Nav />
+          </div>
+          <div class="catch-copy">
+            <div class="first"><h2>見える自然</h2></div>
+            <div class="second">
+              <h2>見えない自然</h2>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Top from '~/layouts/Top.vue'
-// import Nav from '~/components/Nav.vue'
+// import Top from '~/layouts/Top.vue'
+import Nav from '~/components/Nav.vue'
 export default {
   components: {
-    Top
-    // Nav
+    // Top,
+    Nav
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -25,12 +38,61 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
 
-.wrapper {
-  background-color: antiquewhite;
-  width: 1920px;
-  height: 6054px;
+  .wrapper {
+    background-color: antiquewhite;
+    width: 1920px;
+    height: 6054px;
+
+    .top-wrapper {
+      width: 100vw;
+      height: 100vh;
+      background-color: orange;
+
+      .main-wrapper {
+        width: 100vw;
+        height: 95%;
+        background-color: lightblue;
+
+        .main-image {
+          height: 100%;
+          width: 90vw;
+          background-color: lightpink;
+        }
+        .catch-copy {
+          width: 40%;
+          height: 35%;
+          background-color: white;
+          position: relative;
+          top: -60%;
+          right: -56%;
+          .first {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
+            h2 {
+              font-size: 77px;
+            }
+          }
+          .second {
+            width: 100%;
+            height: 50%;
+            top: 50%;
+            text-align: right;
+            /*vertical-align: middle;*/
+            /*line-height: 50%;*/
+            /*padding-top: 8%;*/
+            background-color: lightyellow;
+            h2 {
+              font-size: 77px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .title {
