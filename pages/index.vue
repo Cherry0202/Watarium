@@ -16,6 +16,7 @@
       </div>
       <div class="about-wrapper">
         <Title v-bind:titles="titles.about" />
+        <div class="about-content-wrapper"></div>
       </div>
       <div class="exhibition-wrapper">
         <Title v-bind:titles="titles.exhibition" />
@@ -126,6 +127,12 @@ export default {
       width: 100vw;
       height: 100vh;
       background-color: orange;
+      .about-content-wrapper {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        background-color: lightpink;
+      }
     }
     .exhibition-wrapper {
       width: 100vw;
