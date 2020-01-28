@@ -14,19 +14,39 @@
           </div>
         </main>
       </div>
-      <div class="about-wrapper"></div>
-      <div class="exhibition-wrapper"></div>
-      <div class="lecture-wrapper"></div>
-      <div class="membership-wrapper"></div>
+      <div class="about-wrapper">
+        <Title v-bind:titles="titles.about" />
+      </div>
+      <div class="exhibition-wrapper">
+        <Title v-bind:titles="titles.exhibition" />
+      </div>
+      <div class="lecture-wrapper">
+        <Title v-bind:titles="titles.lecture" />
+      </div>
+      <div class="membership-wrapper">
+        <Title v-bind:titles="titles.membership" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Title from '../components/Title'
 import Nav from '~/components/Nav.vue'
 export default {
   components: {
-    Nav
+    Nav,
+    Title
+  },
+  data() {
+    return {
+      titles: {
+        about: 'ワタリウム美術館について',
+        exhibition: '展覧会一覧',
+        lecture: 'レクチャー・ワークショップ一覧',
+        membership: 'ワタリウムメンバーシップ'
+      }
+    }
   }
 }
 </script>

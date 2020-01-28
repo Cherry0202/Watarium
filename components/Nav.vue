@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <ul>
-      <li class="logo"><a href="#"></a></li>
+      <li class="logo"></li>
       <li class="menu"><a href="#">ワタリウム美術館について</a></li>
       <li class="menu"><a href="#">展覧会一覧</a></li>
       <li class="menu"><a href="#">レクチャー・ワークショップ一覧</a></li>
@@ -81,6 +81,7 @@ nav {
       padding: 0;
       color: #000;
       text-decoration: none;
+      font-weight: 400;
     }
   }
 }
