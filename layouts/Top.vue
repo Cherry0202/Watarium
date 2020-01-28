@@ -1,11 +1,15 @@
 <template>
   <div class="top-wrapper">
-    <Nav />
+    <main class="main-wrapper">
+      main-wrapper
+      <Nav />
+    </main>
+    top-wrapper
   </div>
 </template>
 
 <script>
-import Nav from './Nav'
+import Nav from '../components/Nav'
 export default {
   components: { Nav }
 }
@@ -16,5 +20,10 @@ export default {
   width: 100vw;
   height: 1080px;
   background-color: orange;
+  .main-wrapper {
+    width: 100vw;
+    height: 1030px;
+    background-color: lightblue;
+  }
 }
 </style>

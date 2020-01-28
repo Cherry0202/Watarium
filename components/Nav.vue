@@ -1,5 +1,6 @@
 <template>
   <nav class="nav">
+    nav
     <ul>
       <li><a href="#">LOGO</a></li>
       <li><a href="#">List1</a></li>

@@ -1,14 +1,13 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <!--      <Nav />-->
       <Top />
     </div>
   </div>
 </template>
 
 <script>
-import Top from '~/components/Top.vue'
+import Top from '~/layouts/Top.vue'
 // import Nav from '~/components/Nav.vue'
 export default {
   components: {
