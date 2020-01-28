@@ -1,10 +1,10 @@
 <template>
   <div class="top-wrapper">
     <main class="main-wrapper">
-      main-wrapper
-      <Nav />
+      <div class="main-image">
+        <Nav />
+      </div>
     </main>
-    top-wrapper
   </div>
 </template>
 
@@ -24,6 +24,11 @@ export default {
     width: 100vw;
     height: 1030px;
     background-color: lightblue;
+  }
+  .main-image {
+    height: 1030vh;
+    width: 75vw;
+    background-color: lightpink;
   }
 }
 </style>
