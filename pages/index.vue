@@ -42,12 +42,58 @@
       </div>
       <div class="exhibition-wrapper">
         <Title v-bind:titles="titles.exhibition" />
+        <div class="exhibition-contents-wrapper">
+          <div class="open-contents">
+            <div class="open-title">開催中</div>
+            <div class="open-wrapper">
+              <div class="open-list-wrapper"></div>
+              <div class="open-image"></div>
+            </div>
+          </div>
+          <div class="close-contents">
+            <div class="close-title">過去</div>
+            <div class="close-wrapper">
+              <div class="close-list-wrapper"></div>
+              <div class="close-image"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="lecture-wrapper">
         <Title v-bind:titles="titles.lecture" />
+        <div class="lecture-contents-wrapper">
+          <div class="open-contents">
+            <div class="open-title">開催中</div>
+            <div class="open-wrapper">
+              <div class="open-list-wrapper"></div>
+              <div class="open-image"></div>
+            </div>
+          </div>
+          <div class="close-contents">
+            <div class="close-title">過去</div>
+            <div class="close-wrapper">
+              <div class="close-list-wrapper"></div>
+              <div class="close-image"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="membership-wrapper">
         <Title v-bind:titles="titles.membership" />
+        <div class="membership-contents-wrapper">
+          <div class="membership-contents">
+            <div class="image-wrapper">
+              <div class="image-content-wrapper">
+                <div class="membership-image"></div>
+              </div>
+            </div>
+            <div class="membership-join-wrapper">
+              <div class="membership-join-content">
+                <a href="#">申し込みはこちら</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -155,6 +201,9 @@ export default {
         margin: 0 auto;
         /*background-color: lightpink;*/
         display: flex;
+        align-items: flex-start;
+        /* mediaquery */
+        /*flex-direction: column;*/
         .about-main-image {
           height: 80%;
           width: 45%;
@@ -180,6 +229,7 @@ export default {
               margin: 0 auto;
               background-image: url('~assets/images/建物２.jpg');
               background-size: contain;
+              background-repeat: no-repeat;
             }
           }
           .about-sub-content {
@@ -221,16 +271,214 @@ export default {
       width: 100vw;
       height: 100vh;
       background-color: orangered;
+
+      .exhibition-contents-wrapper {
+        width: 80%;
+        height: 100%;
+        background-color: lime;
+        margin: 0 auto;
+
+        .open-contents {
+          width: 100%;
+          height: 40%;
+          background-color: orange;
+          display: flex;
+          flex-direction: column;
+          .open-title {
+            width: 100%;
+            height: 10%;
+            background-color: lightyellow;
+            flex-direction: column;
+          }
+          .open-wrapper {
+            width: 100%;
+            height: 90%;
+            background-color: lightseagreen;
+            /*justify-content: flex-start;*/
+            display: flex;
+            justify-content: space-between;
+
+            .open-list-wrapper {
+              width: 45%;
+              height: 100%;
+              background-color: lightsalmon;
+            }
+
+            .open-image {
+              width: 55%;
+              height: 100%;
+              background-color: lightblue;
+            }
+          }
+        }
+
+        .close-contents {
+          width: 100%;
+          height: 40%;
+          background-color: orange;
+          display: flex;
+          flex-direction: column;
+          .close-title {
+            width: 100%;
+            height: 10%;
+            background-color: lightyellow;
+            flex-direction: column;
+          }
+          .close-wrapper {
+            width: 100%;
+            height: 90%;
+            background-color: lightseagreen;
+            /*justify-content: flex-start;*/
+            display: flex;
+            justify-content: space-between;
+
+            .close-list-wrapper {
+              width: 45%;
+              height: 100%;
+              background-color: lightsalmon;
+            }
+
+            .close-image {
+              width: 55%;
+              height: 100%;
+              background-color: lightblue;
+            }
+          }
+        }
+      }
     }
+
     .lecture-wrapper {
       width: 100vw;
       height: 100vh;
       background-color: yellowgreen;
+      .lecture-contents-wrapper {
+        width: 80%;
+        height: 100%;
+        background-color: lime;
+        margin: 0 auto;
+
+        .open-contents {
+          width: 100%;
+          height: 40%;
+          background-color: orange;
+          display: flex;
+          flex-direction: column;
+          .open-title {
+            width: 100%;
+            height: 10%;
+            background-color: lightyellow;
+            flex-direction: column;
+          }
+          .open-wrapper {
+            width: 100%;
+            height: 90%;
+            background-color: lightseagreen;
+            /*justify-content: flex-start;*/
+            display: flex;
+            justify-content: space-between;
+
+            .open-list-wrapper {
+              width: 45%;
+              height: 100%;
+              background-color: lightsalmon;
+            }
+
+            .open-image {
+              width: 55%;
+              height: 100%;
+              background-color: lightblue;
+            }
+          }
+        }
+
+        .close-contents {
+          width: 100%;
+          height: 40%;
+          background-color: orange;
+          display: flex;
+          flex-direction: column;
+          .close-title {
+            width: 100%;
+            height: 10%;
+            background-color: lightyellow;
+            flex-direction: column;
+          }
+          .close-wrapper {
+            width: 100%;
+            height: 90%;
+            background-color: lightseagreen;
+            /*justify-content: flex-start;*/
+            display: flex;
+            justify-content: space-between;
+
+            .close-list-wrapper {
+              width: 45%;
+              height: 100%;
+              background-color: lightsalmon;
+            }
+
+            .close-image {
+              width: 55%;
+              height: 100%;
+              background-color: lightblue;
+            }
+          }
+        }
+      }
     }
+
     .membership-wrapper {
       width: 100vw;
       height: 100vh;
       background-color: lightskyblue;
+      .membership-contents-wrapper {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        background-color: lightpink;
+
+        .membership-contents {
+          width: 100%;
+          height: 100%;
+          background-color: orange;
+
+          .image-wrapper {
+            width: 100%;
+            height: 80%;
+            background-color: lightseagreen;
+
+            .image-content-wrapper {
+              height: 100%;
+              width: 60%;
+              background-color: lightyellow;
+              margin: 0 auto;
+              /*background-image: url('~assets/images/ワタリウムメンバーシップ.png');*/
+              display: flex;
+              align-items: center;
+              .membership-image {
+                height: 50%;
+                width: 100%;
+                background-image: url('~assets/images/ワタリウムメンバーシップ.png');
+                /*background-color: black;*/
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+          .membership-join-wrapper {
+            width: 100%;
+            height: 20%;
+            background-color: lightcyan;
+            .membership-join-content {
+              height: 100%;
+              width: 60%;
+              background-color: lightpink;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
     }
   }
 }
