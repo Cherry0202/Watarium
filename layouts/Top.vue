@@ -19,15 +19,15 @@ export default {
 .top-wrapper {
   width: 100vw;
   height: 1080px;
-  background-color: orange;
+  /*background-color: orange;*/
   .main-wrapper {
     width: 100vw;
     height: 1030px;
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     .main-image {
       height: 1030vh;
       width: 75vw;
-      background-color: lightpink;
+      /*background-color: lightpink;*/
     }
   }
 }
