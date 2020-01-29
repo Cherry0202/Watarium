@@ -34,5 +34,16 @@ export default {
       border-bottom: solid 2px #000000;
     }
   }
+  @media screen and (max-width: 375px) {
+    height: 10vh;
+    .title-wrapper {
+      h1 {
+        font-size: 14px;
+        font-weight: 200;
+        border-top: solid 1px #000000;
+        border-bottom: solid 1px #000000;
+      }
+    }
+  }
 }
 </style>

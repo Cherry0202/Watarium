@@ -254,7 +254,7 @@ export default {
     }
     .about-wrapper {
       width: 100vw;
-      height: 100vh;
+      height: 60vh;
       /*background-color: orange;*/
       .about-content-wrapper {
         height: 100%;
@@ -282,6 +282,12 @@ export default {
           .about-sub-image-wrapper {
             height: 50%;
             width: 100%;
+            @media screen and (max-width: 375px) {
+              .about-sub-image-wrapper {
+                /*height: 100%;*/
+                /*width: 100%;*/
+              }
+            }
             /*background-color: lightcyan;*/
             .about-sub-image {
               height: 100%;
@@ -305,6 +311,19 @@ export default {
               text-align: left;
               font-size: 20px;
             }
+            @media screen and (max-width: 375px) {
+              .about-sub-content-text {
+                height: 75%;
+                width: 95%;
+                margin: 0 auto;
+                /* background-color: lightpink; */
+                text-align: left;
+                font-size: 14px;
+              }
+              .about-sub-content-link {
+                display: none;
+              }
+            }
             .about-sub-content-link {
               height: 25%;
               width: 85%;
@@ -325,37 +344,46 @@ export default {
               }
             }
           }
+          @media screen and (max-width: 375px) {
+            .about-sub-content {
+              height: 50%;
+              width: 197%;
+              /* background-color: lightseagreen; */
+              position: relative;
+              right: 85%;
+            }
+          }
         }
       }
     }
     .exhibition-wrapper {
       width: 100vw;
       height: 100vh;
-      background-color: orangered;
+      /*background-color: orangered;*/
 
       .exhibition-contents-wrapper {
         width: 80%;
         height: 100%;
-        background-color: lime;
+        /*background-color: lime;*/
         margin: 0 auto;
 
         .open-contents {
           width: 100%;
           height: 40%;
-          background-color: orange;
+          /*background-color: orange;*/
           display: flex;
           flex-direction: column;
           .open-title {
             text-align: left;
             width: 100%;
             height: 10%;
-            background-color: lightyellow;
+            /*background-color: lightyellow;*/
             flex-direction: column;
           }
           .open-wrapper {
             width: 100%;
             height: 90%;
-            background-color: lightseagreen;
+            /*background-color: lightseagreen;*/
             /*justify-content: flex-start;*/
             display: flex;
             justify-content: space-between;
@@ -363,7 +391,7 @@ export default {
             .open-list-wrapper {
               width: 45%;
               height: 100%;
-              background-color: lightsalmon;
+              /*background-color: lightsalmon;*/
               text-align: left;
               h3 a {
                 text-decoration: none;
@@ -380,6 +408,11 @@ export default {
               background-image: url('~assets/images/exhibision_open.png');
               background-size: 105% 105%;
               background-repeat: no-repeat;
+            }
+            @media screen and (max-width: 375px) {
+              .open-image {
+                background-image: url('~assets/images/exhibision_open_sp.jpg');
+              }
             }
           }
         }
@@ -425,6 +458,11 @@ export default {
               background-image: url('~assets/images/exhibision_close.png');
               background-size: 105% 105%;
               background-repeat: no-repeat;
+            }
+            @media screen and (max-width: 375px) {
+              .close-image {
+                background-image: url('~assets/images/exhibision_close_sp.jpg');
+              }
             }
           }
         }
@@ -483,6 +521,12 @@ export default {
               background-repeat: no-repeat;
               background-color: #e8f5fd;
             }
+            @media screen and (max-width: 375px) {
+              .open-image {
+                background-image: url('~assets/images/lecture_open_sp.jpg');
+                background-size: cover;
+              }
+            }
           }
         }
 
@@ -526,6 +570,12 @@ export default {
               background-image: url('~assets/images/osuman.png');
               background-size: 100% auto;
               background-repeat: no-repeat;
+            }
+            @media screen and (max-width: 375px) {
+              .close-image {
+                background-image: url('~assets/images/torajiro.jpg');
+                background-size: cover;
+              }
             }
           }
         }
