@@ -122,6 +122,7 @@
         </div>
       </div>
     </div>
+    <a href="#" class="arrow"> </a>
   </div>
 </template>
 
@@ -158,7 +159,7 @@ export default {
   .wrapper {
     /*background-color: antiquewhite;*/
     width: 100vw;
-    height: 500vh;
+    /*height: 500vh;*/
 
     .top-wrapper {
       width: 100vw;
@@ -254,7 +255,7 @@ export default {
     }
     .about-wrapper {
       width: 100vw;
-      height: 60vh;
+      height: 100vh;
       /*background-color: orange;*/
       .about-content-wrapper {
         height: 100%;
@@ -351,9 +352,15 @@ export default {
               /* background-color: lightseagreen; */
               position: relative;
               right: 85%;
+              top: 4%;
             }
           }
         }
+      }
+    }
+    @media screen and (max-width: 375px) {
+      .about-wrapper {
+        height: 60vh;
       }
     }
     .exhibition-wrapper {
@@ -420,20 +427,20 @@ export default {
         .close-contents {
           width: 100%;
           height: 40%;
-          background-color: orange;
+          /*background-color: orange;*/
           display: flex;
           flex-direction: column;
           .close-title {
             width: 100%;
             height: 10%;
-            background-color: lightyellow;
+            /*background-color: lightyellow;*/
             flex-direction: column;
             text-align: left;
           }
           .close-wrapper {
             width: 100%;
             height: 90%;
-            background-color: lightseagreen;
+            /*background-color: lightseagreen;*/
             /*justify-content: flex-start;*/
             display: flex;
             justify-content: space-between;
@@ -442,7 +449,7 @@ export default {
               text-align: left;
               width: 45%;
               height: 100%;
-              background-color: lightsalmon;
+              /*background-color: lightsalmon;*/
               h3 a {
                 text-decoration: none;
                 font-size: 47px;
@@ -472,30 +479,30 @@ export default {
     .lecture-wrapper {
       width: 100vw;
       height: 100vh;
-      background-color: yellowgreen;
+      /*background-color: yellowgreen;*/
       .lecture-contents-wrapper {
         width: 80%;
         height: 100%;
-        background-color: lime;
+        /*background-color: lime;*/
         margin: 0 auto;
 
         .open-contents {
           width: 100%;
           height: 40%;
-          background-color: orange;
+          /*background-color: orange;*/
           display: flex;
           flex-direction: column;
           .open-title {
             width: 100%;
             height: 10%;
-            background-color: lightyellow;
+            /*background-color: lightyellow;*/
             flex-direction: column;
             text-align: left;
           }
           .open-wrapper {
             width: 100%;
             height: 90%;
-            background-color: lightseagreen;
+            /*background-color: lightseagreen;*/
             /*justify-content: flex-start;*/
             display: flex;
             justify-content: space-between;
@@ -503,7 +510,7 @@ export default {
             .open-list-wrapper {
               width: 45%;
               height: 100%;
-              background-color: #e8f5fd;
+              /*background-color: #e8f5fd;*/
               text-align: left;
               h3 a {
                 text-decoration: none;
@@ -533,20 +540,20 @@ export default {
         .close-contents {
           width: 100%;
           height: 40%;
-          background-color: orange;
+          /*background-color: orange;*/
           display: flex;
           flex-direction: column;
           .close-title {
             width: 100%;
             height: 10%;
-            background-color: lightyellow;
+            /*background-color: lightyellow;*/
             flex-direction: column;
             text-align: left;
           }
           .close-wrapper {
             width: 100%;
             height: 90%;
-            background-color: #4eb2ae;
+            /*background-color: #4eb2ae;*/
             /*justify-content: flex-start;*/
             display: flex;
             justify-content: space-between;
@@ -554,7 +561,7 @@ export default {
             .close-list-wrapper {
               width: 45%;
               height: 100%;
-              background-color: lightsalmon;
+              /*background-color: lightsalmon;*/
               text-align: left;
               h3 a {
                 text-decoration: none;
@@ -585,27 +592,27 @@ export default {
     .membership-wrapper {
       width: 100vw;
       height: 100vh;
-      background-color: lightskyblue;
+      /*background-color: lightskyblue;*/
       .membership-contents-wrapper {
         width: 100%;
         height: 80%;
         display: flex;
-        background-color: lightpink;
+        /*background-color: lightpink;*/
 
         .membership-contents {
           width: 100%;
           height: 100%;
-          background-color: orange;
+          /*background-color: orange;*/
 
           .image-wrapper {
             width: 100%;
             height: 80%;
-            background-color: lightseagreen;
+            /*background-color: lightseagreen;*/
 
             .image-content-wrapper {
               height: 100%;
               width: 60%;
-              background-color: lightyellow;
+              /*background-color: lightyellow;*/
               margin: 0 auto;
               /*background-image: url('~assets/images/ワタリウムメンバーシップ.png');*/
               display: flex;
@@ -623,11 +630,11 @@ export default {
           .membership-join-wrapper {
             width: 100%;
             height: 20%;
-            background-color: lightcyan;
+            /*background-color: lightcyan;*/
             .membership-join-content {
               height: 100%;
               width: 60%;
-              background-color: lightpink;
+              /*background-color: lightpink;*/
               margin: 0 auto;
               h1 {
                 font-size: 50px;
@@ -638,8 +645,26 @@ export default {
                 }
               }
             }
+            @media screen and (max-width: 375px) {
+              .membership-join-content {
+                h1 {
+                  font-size: 28px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 375px) {
+            .membership-join-wrapper {
+              position: relative;
+              top: -27%;
+            }
           }
         }
+      }
+    }
+    @media screen and (max-width: 375px) {
+      .membership-wrapper {
+        height: 45vh;
       }
     }
   }
