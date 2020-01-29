@@ -169,49 +169,84 @@ export default {
         width: 100vw;
         height: 95%;
         /*background-color: lightblue;*/
-
         .main-image {
           height: 100%;
           width: 90vw;
           background-size: cover;
-        }
-
-        .main-image {
-        }
-
-        .main-image {
           background-image: url('~assets/images/saboten.jpg');
         }
+        @media screen and (min-width: 376px) {
+          .catch-copy {
+            width: 40%;
+            height: 35%;
+            /*background-color: white;*/
+            position: relative;
+            top: -60%;
+            right: -56%;
 
-        .catch-copy {
-          width: 40%;
-          height: 35%;
-          /*background-color: white;*/
-          position: relative;
-          top: -60%;
-          right: -56%;
-          .first {
-            width: 100%;
-            height: 50%;
-            text-align: left;
-            /*display: flex;*/
-            /*align-items: center;*/
-            /*background-color: lightgray;*/
-            h2 {
-              font-size: 83px;
+            .first {
+              width: 100%;
+              height: 50%;
+              text-align: left;
+              /*display: flex;*/
+              /*align-items: center;*/
+              /*background-color: lightgray;*/
+              h2 {
+                font-size: 83px;
+              }
+            }
+
+            .second {
+              width: 100%;
+              height: 50%;
+              /*top: 50%;*/
+              text-align: right;
+              /*vertical-align: middle;*/
+              /*line-height: 50%;*/
+              /*padding-top: 8%;*/
+              /*background-color: lightyellow;*/
+              h2 {
+                font-size: 83px;
+              }
             }
           }
-          .second {
-            width: 100%;
-            height: 50%;
-            /*top: 50%;*/
-            text-align: right;
-            /*vertical-align: middle;*/
-            /*line-height: 50%;*/
-            /*padding-top: 8%;*/
-            /*background-color: lightyellow;*/
-            h2 {
-              font-size: 83px;
+        }
+        @media screen and (max-width: 375px) {
+          .main-image {
+            width: 100vw;
+          }
+          .catch-copy {
+            width: 38%;
+            height: 10%;
+            /*background-color: white;*/
+            position: relative;
+            top: -60%;
+            right: -10%;
+
+            .first {
+              width: 100%;
+              height: 50%;
+              text-align: left;
+              /*display: flex;*/
+              /*align-items: center;*/
+              /*background-color: lightgray;*/
+              h2 {
+                font-size: 18px;
+              }
+            }
+
+            .second {
+              width: 100%;
+              height: 50%;
+              /*top: 50%;*/
+              text-align: right;
+              /*vertical-align: middle;*/
+              /*line-height: 50%;*/
+              /*padding-top: 8%;*/
+              /*background-color: lightyellow;*/
+              h2 {
+                font-size: 18px;
+              }
             }
           }
         }

@@ -38,7 +38,7 @@ nav {
 
     li.logo {
       width: 300px;
-      margin: 0px;
+      margin: 0;
       padding: 0;
       border-radius: 5px;
       line-height: 1;
@@ -51,20 +51,28 @@ nav {
       /*width: 417px;*/
     }
 
-    li.menu {
-      width: 239px;
-      margin: 0;
-      padding: 0;
-      border-radius: 5px;
-      line-height: 1;
-      color: #000;
-      font-size: 15px;
-      /*background: #007bbb;*/
-      height: 110px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /*width: 417px;*/
+    @media screen and (min-width: 376px) {
+      li.menu {
+        width: 239px;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+        line-height: 1;
+        color: #000;
+        font-size: 15px;
+        /*background: #007bbb;*/
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*width: 417px;*/
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      li.menu {
+        display: none;
+      }
     }
 
     li:first-child {
