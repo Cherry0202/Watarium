@@ -69,7 +69,7 @@ nav {
 
     li:first-child {
       margin-right: auto;
-      background-image: url('~assets/images/watarium_logoのコピー.gif');
+      background-image: url('~assets/images/watariumu_logo_new.png');
       background-size: contain;
       background-repeat: no-repeat;
       width: 417px;

@@ -7,7 +7,9 @@
             <Nav />
           </div>
           <div class="catch-copy">
-            <div class="first"><h2>見える自然</h2></div>
+            <div class="first">
+              <h2>見える自然</h2>
+            </div>
             <div class="second">
               <h2>見えない自然</h2>
             </div>
@@ -46,14 +48,26 @@
           <div class="open-contents">
             <div class="open-title">開催中</div>
             <div class="open-wrapper">
-              <div class="open-list-wrapper"></div>
+              <div class="open-list-wrapper">
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+              </div>
               <div class="open-image"></div>
             </div>
           </div>
           <div class="close-contents">
             <div class="close-title">過去</div>
             <div class="close-wrapper">
-              <div class="close-list-wrapper"></div>
+              <div class="close-list-wrapper">
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+              </div>
               <div class="close-image"></div>
             </div>
           </div>
@@ -65,14 +79,26 @@
           <div class="open-contents">
             <div class="open-title">開催中</div>
             <div class="open-wrapper">
-              <div class="open-list-wrapper"></div>
+              <div class="open-list-wrapper">
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+              </div>
               <div class="open-image"></div>
             </div>
           </div>
           <div class="close-contents">
             <div class="close-title">過去</div>
             <div class="close-wrapper">
-              <div class="close-list-wrapper"></div>
+              <div class="close-list-wrapper">
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+                <h3><a href="#">hoge</a></h3>
+              </div>
               <div class="close-image"></div>
             </div>
           </div>
@@ -285,6 +311,7 @@ export default {
           display: flex;
           flex-direction: column;
           .open-title {
+            text-align: left;
             width: 100%;
             height: 10%;
             background-color: lightyellow;
@@ -302,12 +329,22 @@ export default {
               width: 45%;
               height: 100%;
               background-color: lightsalmon;
+              text-align: left;
+              h3 a {
+                text-decoration: none;
+                font-size: 47px;
+                border-bottom: solid 2px #707070;
+                color: #707070;
+              }
             }
 
             .open-image {
               width: 55%;
               height: 100%;
               background-color: lightblue;
+              background-image: url('~assets/images/exhibision_open.png');
+              background-size: 105% 105%;
+              background-repeat: no-repeat;
             }
           }
         }
@@ -323,6 +360,7 @@ export default {
             height: 10%;
             background-color: lightyellow;
             flex-direction: column;
+            text-align: left;
           }
           .close-wrapper {
             width: 100%;
@@ -333,15 +371,25 @@ export default {
             justify-content: space-between;
 
             .close-list-wrapper {
+              text-align: left;
               width: 45%;
               height: 100%;
               background-color: lightsalmon;
+              h3 a {
+                text-decoration: none;
+                font-size: 47px;
+                border-bottom: solid 2px #707070;
+                color: #707070;
+              }
             }
 
             .close-image {
               width: 55%;
               height: 100%;
               background-color: lightblue;
+              background-image: url('~assets/images/exhibision_close.png');
+              background-size: 105% 105%;
+              background-repeat: no-repeat;
             }
           }
         }
@@ -369,6 +417,7 @@ export default {
             height: 10%;
             background-color: lightyellow;
             flex-direction: column;
+            text-align: left;
           }
           .open-wrapper {
             width: 100%;
@@ -381,13 +430,23 @@ export default {
             .open-list-wrapper {
               width: 45%;
               height: 100%;
-              background-color: lightsalmon;
+              background-color: #e8f5fd;
+              text-align: left;
+              h3 a {
+                text-decoration: none;
+                font-size: 47px;
+                border-bottom: solid 2px #707070;
+                color: #707070;
+              }
             }
 
             .open-image {
               width: 55%;
               height: 100%;
-              background-color: lightblue;
+              background-image: url('~assets/images/lecture_open.png');
+              background-size: 110% 110%;
+              background-repeat: no-repeat;
+              background-color: #e8f5fd;
             }
           }
         }
@@ -403,11 +462,12 @@ export default {
             height: 10%;
             background-color: lightyellow;
             flex-direction: column;
+            text-align: left;
           }
           .close-wrapper {
             width: 100%;
             height: 90%;
-            background-color: lightseagreen;
+            background-color: #4eb2ae;
             /*justify-content: flex-start;*/
             display: flex;
             justify-content: space-between;
@@ -416,12 +476,21 @@ export default {
               width: 45%;
               height: 100%;
               background-color: lightsalmon;
+              text-align: left;
+              h3 a {
+                text-decoration: none;
+                font-size: 47px;
+                border-bottom: solid 2px #707070;
+                color: #707070;
+              }
             }
 
             .close-image {
               width: 55%;
               height: 100%;
-              background-color: lightblue;
+              background-image: url('~assets/images/osuman.png');
+              background-size: 100% auto;
+              background-repeat: no-repeat;
             }
           }
         }
